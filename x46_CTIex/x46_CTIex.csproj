@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>8.0</LangVersion>
+    <UserSecretsId>03804457-9c18-4b5f-900c-90d1b3297cf6</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\x46_IO\x46_IO.csproj" />
+    <ProjectReference Include="..\x46_PWex\x46_PWex.csproj" />
+    <ProjectReference Include="..\x46_SAPI\x46_SAPI.csproj" />
+    <ProjectReference Include="..\x46_varEx\x46_varEx.csproj" />
+  </ItemGroup>
+
+</Project>
