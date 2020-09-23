@@ -2,7 +2,8 @@
 
 namespace x46_core
 {
-    public class Class1
+    public class core
     {
+
     }
 }
