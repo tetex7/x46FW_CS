@@ -7,6 +7,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "x46_core", "x46_core\x46_co
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "x46_FW", "x46_FW\x46_FW.csproj", "{3AC1BE84-555D-451D-9A41-9B941AAD694A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D8CE7225-9518-407F-B3DD-7CE9B64D6EF8}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "x46FW_API", "x46FW_API\x46FW_API.csproj", "{5E2BC974-52D0-4F7C-9727-A22A91240384}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "x46_tester_CLT", "x46_tester_CLT\x46_tester_CLT.csproj", "{8BB423CB-8557-4FF1-8E1E-926F44757EFF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +30,14 @@ Global
 		{3AC1BE84-555D-451D-9A41-9B941AAD694A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3AC1BE84-555D-451D-9A41-9B941AAD694A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3AC1BE84-555D-451D-9A41-9B941AAD694A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E2BC974-52D0-4F7C-9727-A22A91240384}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E2BC974-52D0-4F7C-9727-A22A91240384}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E2BC974-52D0-4F7C-9727-A22A91240384}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E2BC974-52D0-4F7C-9727-A22A91240384}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BB423CB-8557-4FF1-8E1E-926F44757EFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BB423CB-8557-4FF1-8E1E-926F44757EFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BB423CB-8557-4FF1-8E1E-926F44757EFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BB423CB-8557-4FF1-8E1E-926F44757EFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

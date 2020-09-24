@@ -6,12 +6,18 @@ using System.Linq;
 using System.IO;
 using System.Text;
 using System.Threading.Tasks;
+using x46_core;
 
 
 namespace x46_FW
 {
 	namespace IO
 	{
+		public class x46_IO
+        {
+
+        }
+
 		public class FXS
 		{
 			public static void RSFXs(byte[] FT, int off, int cnt)
