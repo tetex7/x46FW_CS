@@ -10,8 +10,8 @@ using System.Threading.Tasks;
 
 namespace x46_FW
 {
-    namespace IO
-    {
+	namespace IO
+	{
 		public class FXS
 		{
 			public static void RSFXs(byte[] FT, int off, int cnt)
