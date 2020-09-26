@@ -37,7 +37,7 @@ namespace x46_FW
 
 			public static string PUS(string UP, ConsoleKey KEY)
 			{
-				Console.Write(UP);
+				Console.WriteLine(UP);
 				while (Console.ReadKey().Key != KEY)
 				{
 					Console.ReadKey(false);
@@ -89,7 +89,7 @@ namespace x46_FW
 				public static Task MMT()
 				{
 					MFX.CTT("MMFX");
-					MFX.BCC(ConsoleColor.Cyan);
+					//MFX.BCC(ConsoleColor.Cyan);
 					return Task.CompletedTask;
 				}
 			}
