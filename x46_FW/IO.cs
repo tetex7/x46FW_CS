@@ -6,20 +6,23 @@ using System.Linq;
 using System.IO;
 using System.Text;
 using System.Threading.Tasks;
-using x46_core;
+using x46_FW.MIS;
+using x46_FW;
 
 
 namespace x46_FW
 {
 	namespace IO
 	{
-		public class x46_IO
-        {
-
+		public class x46_IO : IFSlib.iMIS
+		{
+			public static MISex MID = new MISex("x46_IO", 0x011454FF, true);
         }
 
 		public class FXS
 		{
+		
+
 			public static void RSFXs(byte[] FT, int off, int cnt)
 			{
 				for (int o = 0; o < cnt; o++)

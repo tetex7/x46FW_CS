@@ -76,6 +76,13 @@ namespace x46_FW
 				}
 			}
 
+			private static long __IRANDHASG(long Sseed)
+            {
+				long rt = Sseed.ToString().GetHashCode();
+				return rt;
+            }
+
+
 			//a random number generator
 			public static long iRand(long seed)
 			{
@@ -84,7 +91,7 @@ namespace x46_FW
 				long Reee = 2020;
 				long preC = see * sed - Reee * 3141592653;
 				long potC = preC + sed * Reee;
-				long cracker = potC * see;
+				long cracker = potC * see * __IRANDHASG(see);
 				if (cracker < 0)
 				{ return -cracker; }
 				else { return cracker; }

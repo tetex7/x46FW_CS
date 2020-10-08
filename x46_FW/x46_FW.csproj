@@ -15,9 +15,4 @@
     <None Include="..\.editorconfig" Link=".editorconfig" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\x46FW_API\x46FW_API.csproj" />
-    <ProjectReference Include="..\x46_core\x46_core.csproj" />
-  </ItemGroup>
-
 </Project>
