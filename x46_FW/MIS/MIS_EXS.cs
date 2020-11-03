@@ -7,9 +7,9 @@ namespace x46_FW.MIS
     namespace MIS_EXS
     {
         [Serializable]
-        class ModuleNotFoundException : Exception
+        public class ModuleNotFoundException : Exception
         {
-            public ModuleNotFoundException()
+            private ModuleNotFoundException()
             {
 
             }

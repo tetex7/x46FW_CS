@@ -28,7 +28,7 @@ namespace x46_FW
 
 		public class TISM
 		{
-			public static string[] ONS;
+			//public static string[] ONS;
 			public static Task textDS(string INS)
 			{
 				Console.WriteLine(INS);

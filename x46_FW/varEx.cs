@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
-
+using System.Threading;
 
 namespace x46_FW
 {
@@ -76,25 +77,27 @@ namespace x46_FW
 				}
 			}
 
-			private static long __IRANDHASG(long Sseed)
-            {
+			private static long ___IRANDHASG(long Sseed)
+			{
 				long rt = Sseed.ToString().GetHashCode();
 				return rt;
-            }
+			}
 
 
 			//a random number generator
 			public static long iRand(long seed)
 			{
+
 				long see = seed * seed * seed;
 				const long sed = 0xFAA3E71;
 				long Reee = 2020;
 				long preC = see * sed - Reee * 3141592653;
 				long potC = preC + sed * Reee;
-				long cracker = potC * see * __IRANDHASG(see);
+				long cracker = potC * see * ___IRANDHASG(see);
 				if (cracker < 0)
 				{ return -cracker; }
 				else { return cracker; }
+				
 			}
 		}
 
@@ -104,9 +107,18 @@ namespace x46_FW
 			public static string REV = "R.00.00.01";
 			public static int iID = 0xFAA458;
 
+			public static double POWR(int iny, int pow)
+			{
+				double outy = iny;
+				//double ff = iny;
+				for (uint i = 0; i < pow; i++)
+				{
+                    outy *= iny;
+				}
+				return outy;
+			}
 
-
-			private static double squer(double _inval)
+			public static double squer(double _inval)
 			{
 				double inv = _inval;
 				double por = inv * inv;
@@ -119,6 +131,8 @@ namespace x46_FW
 				double por = inv * inv * inv;
 				return por;
 			}
+
+			
 		}
 	}
 }
