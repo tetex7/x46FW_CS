@@ -10,34 +10,53 @@ namespace x46_FW
 {
 	public class MISex
 	{
+		private bool _tap;
+
 		readonly private DateTime now = DateTime.Now;
 		//module name
 		public string m_name { get; private set; }
 
 		
 		//module ID
-		public uint m_ID { get; private set; }
+		public long m_ID { get; private set; }
 
 		//is a core module
-		public bool m_icore { get; private set; }
+		public bool m_icore;
 
-		public long m_sID { get; private set; }
+		private long _m_sID;
 
-
-		public MISex(string name, uint ID)
+		public long gM_ID()
         {
+			if (_tap == true)
+            {
+				return VarEx.varEx_LM.iRand(now.Minute + now.Second + now.Millisecond / (m_ID * m_name.GetHashCode()));
+			}
+			else if (m_icore == true && _tap == false)
+            {
+				return _m_sID;
+            }
+			else
+            {
+				return VarEx.varEx_LM.iRand(now.Minute + now.Second + now.Millisecond / (m_ID * m_name.GetHashCode()));
+			}
+        }
+
+		public MISex(string name, long ID)
+        {
+			_tap = false;
 			m_name = name;
 			m_ID = ID;
 			m_icore = false;
-			m_sID = VarEx.varEx_LM.iRand(now.Minute + now.Second + now.Millisecond / (m_ID * (long)m_name.GetHashCode()));
+			_m_sID = VarEx.varEx_LM.iRand(now.Minute + now.Second + now.Millisecond / (m_ID * m_name.GetHashCode()));
 		}
 
-		public MISex(string name, uint ID, bool icore)
+		public MISex(string name, long ID, bool icore)
 		{
+			_tap = false;
 			m_name = name;
 			m_ID = ID;
 			m_icore = icore;
-			m_sID = VarEx.varEx_LM.iRand(now.Hour + now.Minute + now.Second / (m_ID * now.Ticks));
+			_m_sID = VarEx.varEx_LM.iRand(now.Minute + now.Second + now.Millisecond / (m_ID * m_name.GetHashCode()));
 		}
 	}
 

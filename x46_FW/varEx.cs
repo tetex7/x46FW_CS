@@ -8,6 +8,15 @@ namespace x46_FW
 {
 	namespace VarEx
 	{
+		public class UT
+        {
+			public long unsTs(ulong IN)
+            {
+				return (long)IN;
+            }
+        }
+
+
 		public class varEx_LM
 		{
 
@@ -87,9 +96,9 @@ namespace x46_FW
 			//a random number generator
 			public static long iRand(long seed)
 			{
-
+				DateTime now = DateTime.Now;
 				long see = seed * seed * seed;
-				const long sed = 0xFAA3E71;
+				long sed = 0xFAA3E71 / (now.Second + now.Millisecond * now.Ticks);
 				long Reee = 2020;
 				long preC = see * sed - Reee * 3141592653;
 				long potC = preC + sed * Reee;

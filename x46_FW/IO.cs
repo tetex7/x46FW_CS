@@ -16,7 +16,7 @@ namespace x46_FW
 	{
 		public class x46_IO : IFSlib.iMIS
 		{
-			public static MISex MID = new MISex("x46_IO", 0x011454FF, true);
+			public static MISex x46_IO_MID = new MISex("x46FW.IO", 0x011454FF, true);
         }
 
 		public class FXS
