@@ -7,6 +7,7 @@
   
 <img src="./x46im%20MK2.png?raw=true" alt="x46FW logo" align="right" height="300px">
 
+
 # **x46-Framework for C#** 
 AKA, ***The-Framework*** and for legacy purposes, *x46-IPP*.
   let's get to the meat of it all the x46-FW is designed to help the developer 
@@ -14,3 +15,5 @@ AKA, ***The-Framework*** and for legacy purposes, *x46-IPP*.
 it is designed to work with every project from Robots to Little Gadgets.
 <a href="./documentation"><h3>More Info in The Documentation.</h3></a>
 <h3>More Documentation Comeing Soon.</h3>
+
+### **PS. why does it say "GPL-3.0 License" IDK it should say a "GUN license"**
