@@ -19,10 +19,11 @@ namespace x46_tester_CLT
 			Console.WriteLine("");
 			Console.WriteLine("Hello World!");
 			//throw new x46_FW.MIS.MIS_EXS.ModuleNotFoundException(MI.m_name);
-			Console.WriteLine(MI.m_ID);
+			Console.WriteLine(MI.gM_ID());
 			System.Console.WriteLine("Press any key to exit.");
 			System.Console.ReadKey();
-			throw new x46_FW.MIS.EXC.ModuleGenericException(x46_FW.IO.x46_IO.x46_IO_MID.m_name);
+			System.Environment.Exit(69);
+			//throw new x46_FW.MIS.EXC.ModuleGenericException(x46_FW.IO.x46_IO.x46_IO_MID.m_name);
 		}
 	}
 }
