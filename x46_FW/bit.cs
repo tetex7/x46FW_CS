@@ -6,9 +6,9 @@ namespace x46_FW
 {
     namespace DAT_TYP
     {
-        class bin
+        class bit
         {
-            
+            //bit = false;
         }
     }
 }

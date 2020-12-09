@@ -6,7 +6,7 @@ namespace x46_FW.FS
 {
 	public class SFS
 	{
-		static void MKD(string pathString)
+		static public void MKD(string pathString)
 		{
 			System.IO.Directory.CreateDirectory(pathString);
 

@@ -24,5 +24,15 @@ namespace x46_FW.MIS
 			public ModuleGenericException(string name)
 				: base(String.Format("Module_Name: {0}", name)) { }
 		}
+
+		[Serializable]
+		public class ModuleMaxVersionException : Exception
+		{
+			/*private*/
+			public ModuleMaxVersionException() { }
+
+			public ModuleMaxVersionException(string nameI, string nameII, string Rv, string Cv)
+				: base(String.Format("Exc_Module_Name: ({0}) Offending_Module_Name: ({1}) Required_Version: ({2}) Current_Version: ({3})", nameI, nameII, Rv, Cv)) { }
+		}
 	}
 }
