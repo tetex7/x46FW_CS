@@ -2,6 +2,7 @@
 <p align="left">
 <a href="./LICENSE"><img src="https://img.shields.io/badge/license-GNU-informational.svg">
 <a href="./documentation/variance.md"><img src="https://img.shields.io/badge/Variant-C%23-important">
+<a href="https://discord.gg/Sgx2tTCKzP"><img src="https://img.shields.io/badge/Discord Server-up-important">
 <a href="https://isocpp.org/std/status"><img src="https://img.shields.io/badge/cpp%20Version%20Required-NA-critical">
   </a></p>
   
