@@ -6,15 +6,15 @@ using System.Threading;
 
 namespace x46_FW
 {
-	namespace VarEx
+	namespace varEx
 	{
 		public class UT
-        {
+		{
 			public long unsTs(ulong IN)
-            {
+			{
 				return (long)IN;
-            }
-        }
+			}
+		}
 
 
 		public class varEx_LM
@@ -23,48 +23,6 @@ namespace x46_FW
 			public static string ID = "varExLM";
 			public static string REV = "R.00.00.01";
 			public static int iID = 0xFAA458;
-
-
-			// a integer limiter
-			public static int iIntLi(int inval, int max)
-			{
-				int val;
-				if (inval < 0)
-				{ val = -inval; }
-				else { val = inval; }
-				if (max > val)
-				{
-					if (inval < 0)
-					{ return -val; }
-					else { return val; }
-				}
-				else
-				{
-					if (inval < 0)
-					{ return -max; }
-					else { return max; }
-				}
-			}
-
-			// a float limiter
-			public static float IFloatLi(float inval, float max)
-			{
-				float val;
-				if (inval < 0) { val = -inval; }
-				else { val = inval; }
-				if (max > val)
-				{
-					if (inval < 0)
-					{ return -val; }
-					else { return val; }
-				}
-				else
-				{
-					if (inval < 0)
-					{ return -max; }
-					else { return max; }
-				}
-			}
 
 			// a float limiter
 			public static float iFloatLi(float inval, float max)
@@ -122,7 +80,7 @@ namespace x46_FW
 				//double ff = iny;
 				for (uint i = 0; i < pow; i++)
 				{
-                    outy *= iny;
+					outy *= iny;
 				}
 				return outy;
 			}

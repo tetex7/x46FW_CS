@@ -12,7 +12,7 @@ using x46_FW;
 
 namespace x46_FW
 {
-	namespace newIO
+	namespace IO
 	{
 		public class x46_IO : IFSlib.iMIS
 		{
@@ -54,7 +54,7 @@ namespace x46_FW
 
 		namespace GS
 		{
-			public class GS
+			public class GS1
 			{
 				public static Stream gsI;
 				public static void GSISet(byte[] FT, int off, int cnt)

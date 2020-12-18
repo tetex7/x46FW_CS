@@ -12,7 +12,7 @@ using x46_FW;
 
 namespace x46_FW
 {
-	namespace IO
+	namespace IOl
 	{
 		public class x46_IO : IFSlib.iMIS
 		{

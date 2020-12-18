@@ -7,7 +7,7 @@ using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 using x46_FW.IO;
-using x46_FW.IO.GS;
+using x46_FW.IOl.GS;
 
 namespace x46_FW
 {
@@ -47,7 +47,7 @@ namespace x46_FW
 				{
 					Console.ReadKey(false);
 				}
-				return FXS.oFXSsg();
+				return IOl.FXS.oFXSsg();
 			}
 
 			public static string PUS(string UP, ConsoleKey KEY, bool STGS)
@@ -60,9 +60,9 @@ namespace x46_FW
 
 				if (STGS)
 				{
-					FXS.STS(FXS.oFXSg(), GS.gsI);
+					IOl.FXS.STS(IOl.FXS.oFXSg(), GS.gsI);
 				}
-				return FXS.oFXSsg();
+				return IOl.FXS.oFXSsg();
 			}
 
 			public static string PUS(string UP, ConsoleKey KEY, string TIT)
@@ -74,7 +74,7 @@ namespace x46_FW
 					Console.ReadKey(false);
 				}
 				MFX.CTT("/n");
-				return FXS.oFXSsg();
+				return IOl.FXS.oFXSsg();
 			}
 
 			public static Task textDS(string[] INS, bool NL)

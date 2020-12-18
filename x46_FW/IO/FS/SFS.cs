@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace x46_FW.FS
+namespace x46_FW.IO.FS
 {
 	public class SFS
 	{

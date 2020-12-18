@@ -10,7 +10,7 @@ namespace x46_FW
 		/// <summary>
 		/// general byte stream
 		/// </summary>
-		public class GBS
+		public class GB1S
 		{
             //public Stream BS { get; private set; }
             private MemoryStream BS = new MemoryStream();
@@ -24,6 +24,11 @@ namespace x46_FW
             public long Length { get; private set; }
 
             public long Position { get; private set; }
+
+            public GB1S()
+            {
+                
+            }
 
             /// <summary>
             /// lock the bitstream
