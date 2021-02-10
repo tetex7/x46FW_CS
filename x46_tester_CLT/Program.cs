@@ -11,7 +11,7 @@ namespace x46_tester_CLT
 	{
 		//static int f = 00;
 		//static int* fff = f;
-		static x46_FW.MISex MI = new x46_FW.MISex("dd", 111);
+		//static x46_FW.MISex MI = new x46_FW.MISex("dd", 111);
 		static void Main(/*string[] args*/)
 		{
 			var ff = TISM.PUS("TYPEATTR", ConsoleKey.F1);

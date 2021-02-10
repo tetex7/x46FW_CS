@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using x46_FW.core;
+
 
 namespace x46_FW.varEx
 {
-    public class limiters
+	[MISex("limiters", 0xF5, "1.1.0")]
+    public static class limiters
     {
 
 		/// <summary>
@@ -19,7 +22,7 @@ namespace x46_FW.varEx
 			if (inval < 0)
 			{ val = -inval; }
 			else { val = inval; }
-			if (max > val)
+			if (max >= val)
 			{
 				if (inval < 0)
 				{ return -val; }
@@ -44,7 +47,7 @@ namespace x46_FW.varEx
 			float val;
 			if (inval < 0) { val = -inval; }
 			else { val = inval; }
-			if (max > val)
+			if (max >= val)
 			{
 				if (inval < 0)
 				{ return -val; }
@@ -58,14 +61,19 @@ namespace x46_FW.varEx
 			}
 		}
 
-		/*public static T iIntLi<T>(T inval, T max)
+		/// <summary>
+		/// a Decimal limiter
+		/// </summary>
+		/// <param name="inval">in val</param>
+		/// <param name="max">max val</param>
+		/// <returns>max_out val</returns>
+		public static decimal iDECLi(decimal inval, decimal max)
 		{
-			T val;
-			T Z = 0;
-			if ((int)inval < 0)
+			decimal val;
+			if (inval < 0)
 			{ val = -inval; }
 			else { val = inval; }
-			if (max > val)
+			if (max >= val)
 			{
 				if (inval < 0)
 				{ return -val; }
@@ -77,7 +85,59 @@ namespace x46_FW.varEx
 				{ return -max; }
 				else { return max; }
 			}
-		}*/
+		}
+
+		/// <summary>
+		/// a Decimal limiter
+		/// </summary>
+		/// <param name="inval">in val</param>
+		/// <param name="max">max val</param>
+		/// <returns>max_out val</returns>
+		public static long iDECLi(long inval, long max)
+		{
+			long val;
+			if (inval < 0)
+			{ val = -inval; }
+			else { val = inval; }
+			if (max >= val)
+			{
+				if (inval < 0)
+				{ return -val; }
+				else { return val; }
+			}
+			else
+			{
+				if (inval < 0)
+				{ return -max; }
+				else { return max; }
+			}
+		}
+
+		/// <summary>
+		/// a Decimal limiter
+		/// </summary>
+		/// <param name="inval">in val</param>
+		/// <param name="max">max val</param>
+		/// <returns>max_out val</returns>
+		public static double iDOULi(double inval, double max)
+		{
+			double val;
+			if (inval < 0)
+			{ val = -inval; }
+			else { val = inval; }
+			if (max >= val)
+			{
+				if (inval < 0)
+				{ return -val; }
+				else { return val; }
+			}
+			else
+			{
+				if (inval < 0)
+				{ return -max; }
+				else { return max; }
+			}
+		}
 
 	}
 }

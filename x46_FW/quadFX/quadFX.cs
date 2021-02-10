@@ -13,10 +13,6 @@ namespace x46_FW
 {
 	namespace quadFX
 	{
-		public class x46FW_quadFX
-        {
-			static x46_FW.MISex qfxMIS = new MISex("quadFX", 0x01050510, true);
-        }
 
 		public class MFX
 		{
